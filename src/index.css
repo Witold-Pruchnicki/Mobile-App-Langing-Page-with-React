@@ -1,13 +1,113 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+input{
+    border: none;
+    outline: none;
+}
+.container{
+    max-width: 95%;
+    margin: 0 auto;
+}
+.logo img{
+    width: 15vw;
+    margin-right: 100px;
+}
+#main{
+    width: 100%;
+    position: relative;
+    height: 768px;
+    background-size: cover;
+    background-image: url("./images/Gradient Fill 1.svg");
+
+}
+nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    left:0;
+    top:30px;
+    width: 100%;
+    z-index: 1;
+    background-color: transparent;
+    transition: 0.6s ease-out;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav ul {
+    display: flex;
+}
+nav ul a{
+    font-size: 1.45vw;
+    font-weight: 600;
+    margin-left: 25px;
+    color: #D59700;
+}
+nav ul a.active{
+    color:white;
+    padding: 5px 20px;
+    background-color: #D59700;
+    border-radius: 24px;
+}
+.active{
+    background-color: #00b7ff;
+    color:#ffffff;
+    box-shadow: 5px 10px 30px rgba(189, 198, 64, 0.411);
+    transition: all ease 0.2s;
+}
+.main-header{
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 200px;
+    display: flex;
+    column-gap: 30px;
+    justify-content: space-between;
+}
+.header-text{
+    width: 60%;
+    color:white;
+}
+.header-text h1,h2{
+    text-transform: uppercase;
+    padding-top: 20px;
+    font-size: 2.8vw;
+}
+.header-text h1{
+    padding: 5px 20px;
+    width: fit-content;
+    background-color: #D59700;
+    font-size: 2.5vw;
+}
+.header-text p{
+    margin-top: 20px;
+    font-size: 1.45vw;
+}
+.header-button{
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 10px 70px;
+    margin-top: 40px;
+    border-radius: 24px;
+    font-size: 1.45vw;
+    font-weight: bold;
+}
+.header-img{
+    width: 35%;
+}
+.header-img img{
+    max-width: 16vw;
 }
